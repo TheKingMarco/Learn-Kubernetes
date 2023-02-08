@@ -27,3 +27,33 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+*.conf
+*.tfplan
+.vs
+.vs/*
+
+# Local History for Visual Studio Code
+.history/
+
+*.exe
+/.terraform/.vs
+/.terraform/*
+.terraform/*
+./terraform*
+.\terraform*
+azure.conf
+*.conf
+*.tfplan
+.terraform*
+.terraform.lock.*
+crash.log
+
+*.pfx
+
+Variables/secrets.tfvars

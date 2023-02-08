@@ -25,6 +25,8 @@ az aks get-credentials --resource-group $RGNAME --name $AKSNAME
 ###verifica connessione###
 kubectl get nodes
 ```
+# Clean UP
+
 # Delete or Stop or start cluster AKS
 ```azure cli
 
@@ -38,5 +40,11 @@ az aks delete -g $RGNAME -n $AKSNAME -y  #-y per confermare
 kubectl config delete-cluster $AKSNAME
 ###Delete the specified context from the kubeconfig.
 kubectl config delete-context $AKSNAME
+
+```
+# Delete RG
+```azure cli
+
+az group delete -g $RGNAME -y
 
 ```

@@ -1,3 +1,4 @@
 terraform init --reconfigure --backend-config="azure_core.conf"
 terraform plan -var-file="Variables/core.tfvars"
 terraform apply -var-file="Variables/core.tfvars" -auto-approve
+terraform destory -var-file="Variables/core.tfvars" -auto-approve

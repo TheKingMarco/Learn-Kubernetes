@@ -3,13 +3,6 @@
 az login
 az account list
 ```
-# Creazione RG
-```azure cli
-$RGNAME="learn-kubernetes"
-$LOCATION="westeurope"
-
-az group create --name $RGNAME --location $LOCATION
-```
 # Creazione Azure Services Principal
 ```azure cli
 #get subscription ID
@@ -20,4 +13,6 @@ az ad sp create-for-rbac --name sp-all-env --role Contributor --scopes /subscrip
 
 #sp a livello rg
 az ad sp create-for-rbac --name sp-all-env --role Contributor --scopes /subscriptions/$subscriptionID/resourceGroups/$RGNAME
+
+###conserva l'output del comando e inseriscilo nelle variabili sell Services Principal###
 ```
