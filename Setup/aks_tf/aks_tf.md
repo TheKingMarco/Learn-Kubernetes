@@ -16,3 +16,10 @@ az ad sp create-for-rbac --name sp-all-env --role Contributor --scopes /subscrip
 
 ###conserva l'output del comando e inseriscilo nelle variabili sell Services Principal###
 ```
+# azure_core.conf 
+```azure cli
+inserisci i paramentri di un di un resurrce group e di un staccount per mantenere lo stato di terraform
+
+#creazione RG e Storage account per mantenere backend cli
+
+```
